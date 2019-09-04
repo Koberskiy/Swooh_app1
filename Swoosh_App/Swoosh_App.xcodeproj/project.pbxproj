@@ -12,6 +12,7 @@
 		844DADAC2320543B0059134F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844DADAA2320543B0059134F /* Main.storyboard */; };
 		844DADAE2320543D0059134F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844DADAD2320543D0059134F /* Assets.xcassets */; };
 		844DADB12320543D0059134F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844DADAF2320543D0059134F /* LaunchScreen.storyboard */; };
+		844DADBA23205CB20059134F /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844DADB923205CB20059134F /* BorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		844DADAD2320543D0059134F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844DADB02320543D0059134F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844DADB22320543D0059134F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844DADB923205CB20059134F /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		844DADA52320543B0059134F /* Swoosh_App */ = {
 			isa = PBXGroup;
 			children = (
+				844DADB823205C800059134F /* Views */,
 				844DADA62320543B0059134F /* AppDelegate.swift */,
 				844DADA82320543B0059134F /* ViewController.swift */,
 				844DADAA2320543B0059134F /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				844DADB22320543D0059134F /* Info.plist */,
 			);
 			path = Swoosh_App;
+			sourceTree = "<group>";
+		};
+		844DADB823205C800059134F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				844DADB923205CB20059134F /* BorderButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				844DADA92320543B0059134F /* ViewController.swift in Sources */,
 				844DADA72320543B0059134F /* AppDelegate.swift in Sources */,
+				844DADBA23205CB20059134F /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +294,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Swoosh_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +303,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yaroslav.koberskyy.Swoosh-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +313,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Swoosh_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yaroslav.koberskyy.Swoosh-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
