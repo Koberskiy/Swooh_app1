@@ -49,6 +49,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6Vt-lk-z79" kind="show" id="ZMI-gG-X8c"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league " textAlignment="center" lineBreakMode="headTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7g-Gn-x6R">
                                 <rect key="frame" x="57.5" y="244" width="260" height="41"/>
@@ -168,12 +171,23 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xt0-Wc-iLA">
+                                <rect key="frame" x="20" y="20" width="29" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="nnA-lv-4Nh"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="unwineSkillFromVCWithUnwinedSegue:" destination="GLS-fu-1Xp" eventType="touchUpInside" id="I8o-0S-SGs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ya5-0h-7vz" firstAttribute="trailing" secondItem="VNH-d6-Bry" secondAttribute="trailing" constant="-20" id="1lL-DV-PaV"/>
                             <constraint firstItem="VNH-d6-Bry" firstAttribute="bottom" secondItem="Ya5-0h-7vz" secondAttribute="bottom" constant="15" id="742-xM-2NG"/>
                             <constraint firstItem="VNH-d6-Bry" firstAttribute="trailing" secondItem="m2T-V1-7ZS" secondAttribute="trailing" constant="20" id="9ro-rT-g2c"/>
+                            <constraint firstItem="Xt0-Wc-iLA" firstAttribute="top" secondItem="VNH-d6-Bry" secondAttribute="top" id="B1I-5Q-B1q"/>
                             <constraint firstItem="VNH-d6-Bry" firstAttribute="trailing" secondItem="lDz-a4-dHf" secondAttribute="trailing" id="BHd-cZ-LV2"/>
                             <constraint firstItem="0b2-dg-CHA" firstAttribute="top" secondItem="DDr-F0-ytU" secondAttribute="top" id="DgV-SD-9FZ"/>
                             <constraint firstItem="VNH-d6-Bry" firstAttribute="trailing" secondItem="0b2-dg-CHA" secondAttribute="trailing" id="F3f-d9-tHh"/>
@@ -184,6 +198,7 @@
                             <constraint firstItem="lDz-a4-dHf" firstAttribute="top" secondItem="VNH-d6-Bry" secondAttribute="top" id="cuC-2B-Ehm"/>
                             <constraint firstItem="Ya5-0h-7vz" firstAttribute="leading" secondItem="VNH-d6-Bry" secondAttribute="leading" constant="20" id="e1K-PE-2j7"/>
                             <constraint firstItem="lDz-a4-dHf" firstAttribute="leading" secondItem="VNH-d6-Bry" secondAttribute="leading" id="u6R-mv-Fhg"/>
+                            <constraint firstItem="Xt0-Wc-iLA" firstAttribute="leading" secondItem="VNH-d6-Bry" secondAttribute="leading" constant="20" id="uGA-fG-3nn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VNH-d6-Bry"/>
                     </view>
@@ -286,6 +301,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
